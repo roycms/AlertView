@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87F3E0F6DE5392898C72AF1E /* libPods-RAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E373A98319280E1B0FB13 /* libPods-RAlert.a */; };
+		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
+		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
+		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
+		B0FA76FB1DAE4F3D00677D11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FA76F91DAE4F3D00677D11 /* Main.storyboard */; };
+		B0FA76FD1DAE4F3D00677D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FA76FC1DAE4F3D00677D11 /* Assets.xcassets */; };
+		B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FA76FE1DAE4F3D00677D11 /* LaunchScreen.storyboard */; };
+		B0FA770B1DAE4F3E00677D11 /* RAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA770A1DAE4F3E00677D11 /* RAlertTests.m */; };
+		B0FA77161DAE4F3E00677D11 /* RAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA77151DAE4F3E00677D11 /* RAlertUITests.m */; };
+		B0FA77251DAE4F7600677D11 /* RAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA77241DAE4F7600677D11 /* RAlertView.m */; };
+		B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77271DAE582500677D11 /* closed@3x.png */; };
+		B0FA772B1DAE582500677D11 /* closed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77281DAE582500677D11 /* closed@2x.png */; };
+		B0FA772C1DAE582500677D11 /* closed.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77291DAE582500677D11 /* closed.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0FA77071DAE4F3E00677D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FA76E51DAE4F3D00677D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FA76EC1DAE4F3D00677D11;
+			remoteInfo = RAlert;
+		};
+		B0FA77121DAE4F3E00677D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FA76E51DAE4F3D00677D11 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FA76EC1DAE4F3D00677D11;
+			remoteInfo = RAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56656B9DB8C05746D8AA209D /* Pods-RAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.release.xcconfig"; sourceTree = "<group>"; };
+		58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B0FA76F61DAE4F3D00677D11 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B0FA76F71DAE4F3D00677D11 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B0FA76FA1DAE4F3D00677D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0FA76FC1DAE4F3D00677D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0FA76FF1DAE4F3D00677D11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0FA77011DAE4F3D00677D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FA77061DAE4F3E00677D11 /* RAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FA770A1DAE4F3E00677D11 /* RAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAlertTests.m; sourceTree = "<group>"; };
+		B0FA770C1DAE4F3E00677D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FA77111DAE4F3E00677D11 /* RAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FA77151DAE4F3E00677D11 /* RAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAlertUITests.m; sourceTree = "<group>"; };
+		B0FA77171DAE4F3E00677D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FA77231DAE4F7600677D11 /* RAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAlertView.h; sourceTree = "<group>"; };
+		B0FA77241DAE4F7600677D11 /* RAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAlertView.m; sourceTree = "<group>"; };
+		B0FA77271DAE582500677D11 /* closed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@3x.png"; sourceTree = "<group>"; };
+		B0FA77281DAE582500677D11 /* closed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@2x.png"; sourceTree = "<group>"; };
+		B0FA77291DAE582500677D11 /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
+		D54E373A98319280E1B0FB13 /* libPods-RAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAlert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0FA76EA1DAE4F3D00677D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87F3E0F6DE5392898C72AF1E /* libPods-RAlert.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA77031DAE4F3E00677D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA770E1DAE4F3E00677D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		066E7F33A58E28DA8564D7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D54E373A98319280E1B0FB13 /* libPods-RAlert.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0FA76E41DAE4F3D00677D11 = {
+			isa = PBXGroup;
+			children = (
+				B0FA76EF1DAE4F3D00677D11 /* RAlert */,
+				B0FA77091DAE4F3E00677D11 /* RAlertTests */,
+				B0FA77141DAE4F3E00677D11 /* RAlertUITests */,
+				B0FA76EE1DAE4F3D00677D11 /* Products */,
+				E5AFF29AC7B58D8816CE449B /* Pods */,
+				066E7F33A58E28DA8564D7AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0FA76EE1DAE4F3D00677D11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA76ED1DAE4F3D00677D11 /* RAlert.app */,
+				B0FA77061DAE4F3E00677D11 /* RAlertTests.xctest */,
+				B0FA77111DAE4F3E00677D11 /* RAlertUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0FA76EF1DAE4F3D00677D11 /* RAlert */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA77261DAE4F7A00677D11 /* RAlertView */,
+				B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */,
+				B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */,
+				B0FA76F61DAE4F3D00677D11 /* ViewController.h */,
+				B0FA76F71DAE4F3D00677D11 /* ViewController.m */,
+				B0FA76F91DAE4F3D00677D11 /* Main.storyboard */,
+				B0FA76FC1DAE4F3D00677D11 /* Assets.xcassets */,
+				B0FA76FE1DAE4F3D00677D11 /* LaunchScreen.storyboard */,
+				B0FA77011DAE4F3D00677D11 /* Info.plist */,
+				B0FA76F01DAE4F3D00677D11 /* Supporting Files */,
+			);
+			path = RAlert;
+			sourceTree = "<group>";
+		};
+		B0FA76F01DAE4F3D00677D11 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA77271DAE582500677D11 /* closed@3x.png */,
+				B0FA77281DAE582500677D11 /* closed@2x.png */,
+				B0FA77291DAE582500677D11 /* closed.png */,
+				B0FA76F11DAE4F3D00677D11 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0FA77091DAE4F3E00677D11 /* RAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA770A1DAE4F3E00677D11 /* RAlertTests.m */,
+				B0FA770C1DAE4F3E00677D11 /* Info.plist */,
+			);
+			path = RAlertTests;
+			sourceTree = "<group>";
+		};
+		B0FA77141DAE4F3E00677D11 /* RAlertUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA77151DAE4F3E00677D11 /* RAlertUITests.m */,
+				B0FA77171DAE4F3E00677D11 /* Info.plist */,
+			);
+			path = RAlertUITests;
+			sourceTree = "<group>";
+		};
+		B0FA77261DAE4F7A00677D11 /* RAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				B0FA77231DAE4F7600677D11 /* RAlertView.h */,
+				B0FA77241DAE4F7600677D11 /* RAlertView.m */,
+			);
+			name = RAlertView;
+			sourceTree = "<group>";
+		};
+		E5AFF29AC7B58D8816CE449B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */,
+				56656B9DB8C05746D8AA209D /* Pods-RAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0FA76EC1DAE4F3D00677D11 /* RAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FA771A1DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlert" */;
+			buildPhases = (
+				D20D41EA5F99B5A4CE662B0C /* Check Pods Manifest.lock */,
+				B0FA76E91DAE4F3D00677D11 /* Sources */,
+				B0FA76EA1DAE4F3D00677D11 /* Frameworks */,
+				B0FA76EB1DAE4F3D00677D11 /* Resources */,
+				3B1F25FF4002D628FB67895D /* Embed Pods Frameworks */,
+				85B99471AA3D737B7A662D86 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAlert;
+			productName = RAlert;
+			productReference = B0FA76ED1DAE4F3D00677D11 /* RAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0FA77051DAE4F3E00677D11 /* RAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FA771D1DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlertTests" */;
+			buildPhases = (
+				B0FA77021DAE4F3E00677D11 /* Sources */,
+				B0FA77031DAE4F3E00677D11 /* Frameworks */,
+				B0FA77041DAE4F3E00677D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FA77081DAE4F3E00677D11 /* PBXTargetDependency */,
+			);
+			name = RAlertTests;
+			productName = RAlertTests;
+			productReference = B0FA77061DAE4F3E00677D11 /* RAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0FA77101DAE4F3E00677D11 /* RAlertUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FA77201DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlertUITests" */;
+			buildPhases = (
+				B0FA770D1DAE4F3E00677D11 /* Sources */,
+				B0FA770E1DAE4F3E00677D11 /* Frameworks */,
+				B0FA770F1DAE4F3E00677D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FA77131DAE4F3E00677D11 /* PBXTargetDependency */,
+			);
+			name = RAlertUITests;
+			productName = RAlertUITests;
+			productReference = B0FA77111DAE4F3E00677D11 /* RAlertUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0FA76E51DAE4F3D00677D11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = roycms;
+				TargetAttributes = {
+					B0FA76EC1DAE4F3D00677D11 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8N7N7WZT8J;
+						ProvisioningStyle = Automatic;
+					};
+					B0FA77051DAE4F3E00677D11 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B0FA76EC1DAE4F3D00677D11;
+					};
+					B0FA77101DAE4F3E00677D11 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B0FA76EC1DAE4F3D00677D11;
+					};
+				};
+			};
+			buildConfigurationList = B0FA76E81DAE4F3D00677D11 /* Build configuration list for PBXProject "RAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0FA76E41DAE4F3D00677D11;
+			productRefGroup = B0FA76EE1DAE4F3D00677D11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0FA76EC1DAE4F3D00677D11 /* RAlert */,
+				B0FA77051DAE4F3E00677D11 /* RAlertTests */,
+				B0FA77101DAE4F3E00677D11 /* RAlertUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0FA76EB1DAE4F3D00677D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */,
+				B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */,
+				B0FA76FD1DAE4F3D00677D11 /* Assets.xcassets in Resources */,
+				B0FA76FB1DAE4F3D00677D11 /* Main.storyboard in Resources */,
+				B0FA772B1DAE582500677D11 /* closed@2x.png in Resources */,
+				B0FA772C1DAE582500677D11 /* closed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA77041DAE4F3E00677D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA770F1DAE4F3E00677D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B1F25FF4002D628FB67895D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAlert/Pods-RAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B99471AA3D737B7A662D86 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RAlert/Pods-RAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D20D41EA5F99B5A4CE662B0C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0FA76E91DAE4F3D00677D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */,
+				B0FA77251DAE4F7600677D11 /* RAlertView.m in Sources */,
+				B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */,
+				B0FA76F21DAE4F3D00677D11 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA77021DAE4F3E00677D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FA770B1DAE4F3E00677D11 /* RAlertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FA770D1DAE4F3E00677D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FA77161DAE4F3E00677D11 /* RAlertUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0FA77081DAE4F3E00677D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FA76EC1DAE4F3D00677D11 /* RAlert */;
+			targetProxy = B0FA77071DAE4F3E00677D11 /* PBXContainerItemProxy */;
+		};
+		B0FA77131DAE4F3E00677D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FA76EC1DAE4F3D00677D11 /* RAlert */;
+			targetProxy = B0FA77121DAE4F3E00677D11 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0FA76F91DAE4F3D00677D11 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FA76FA1DAE4F3D00677D11 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0FA76FE1DAE4F3D00677D11 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FA76FF1DAE4F3D00677D11 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0FA77181DAE4F3E00677D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B0FA77191DAE4F3E00677D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0FA771B1DAE4F3E00677D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N7N7WZT8J;
+				INFOPLIST_FILE = RAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B0FA771C1DAE4F3E00677D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56656B9DB8C05746D8AA209D /* Pods-RAlert.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8N7N7WZT8J;
+				INFOPLIST_FILE = RAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B0FA771E1DAE4F3E00677D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAlert.app/RAlert";
+			};
+			name = Debug;
+		};
+		B0FA771F1DAE4F3E00677D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlertTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAlert.app/RAlert";
+			};
+			name = Release;
+		};
+		B0FA77211DAE4F3E00677D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RAlert;
+			};
+			name = Debug;
+		};
+		B0FA77221DAE4F3E00677D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RAlertUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.roycms.RAlert.RAlertUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RAlert;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0FA76E81DAE4F3D00677D11 /* Build configuration list for PBXProject "RAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FA77181DAE4F3E00677D11 /* Debug */,
+				B0FA77191DAE4F3E00677D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FA771A1DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FA771B1DAE4F3E00677D11 /* Debug */,
+				B0FA771C1DAE4F3E00677D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FA771D1DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FA771E1DAE4F3E00677D11 /* Debug */,
+				B0FA771F1DAE4F3E00677D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FA77201DAE4F3E00677D11 /* Build configuration list for PBXNativeTarget "RAlertUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FA77211DAE4F3E00677D11 /* Debug */,
+				B0FA77221DAE4F3E00677D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0FA76E51DAE4F3D00677D11 /* Project object */;
+}
