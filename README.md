@@ -4,7 +4,7 @@
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
 [![Shippable](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff.svg?maxAge=2592000?style=flat-square)](https://github.com/roycms/RAlertView)
-[![CocoaPods](https://img.shields.io/cocoapods/v/AFNetworking.svg?maxAge=2592000?style=flat-square)](http://cocoapods.org/?q=RAlertView)
+[![CocoaPods](https://img.shields.io/badge/pod-0.0.1-brightgreen.svg)](http://cocoapods.org/?q=RAlertView)
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=flat-square)](https://github.com/roycms/RAlertView/blob/master/LICENSE)
 
 
