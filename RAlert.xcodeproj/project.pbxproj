@@ -10,6 +10,7 @@
 		87F3E0F6DE5392898C72AF1E /* libPods-RAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E373A98319280E1B0FB13 /* libPods-RAlert.a */; };
 		B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */; };
 		B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B71DB0AD7600A076C7 /* Theme.jpg */; };
+		B092E8BB1DB0B83000A076C7 /* log.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8BA1DB0B83000A076C7 /* log.png */; };
 		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
 		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
 		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
@@ -46,6 +47,7 @@
 		58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertStyle.jpg; sourceTree = "<group>"; };
 		B092E8B71DB0AD7600A076C7 /* Theme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Theme.jpg; sourceTree = "<group>"; };
+		B092E8BA1DB0B83000A076C7 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
 		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		B092E8B51DB0AD6200A076C7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B092E8BA1DB0B83000A076C7 /* log.png */,
 				B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */,
 				B092E8B71DB0AD7600A076C7 /* Theme.jpg */,
 			);
@@ -310,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B092E8BB1DB0B83000A076C7 /* log.png in Resources */,
 				B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */,
 				B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */,
 				B0FA76FD1DAE4F3D00677D11 /* Assets.xcassets in Resources */,
