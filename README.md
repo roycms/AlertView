@@ -1,11 +1,11 @@
 # RAlertView
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
-### Installation
+## Installation
 - Depend on the project ` Masonry `and ` HexColors ` Import  `#import "Masonry.h"` `#import "HexColors.h"`
 - Import the main header file：`#import "RAlertView.h"`
 
-### Preview  AlertStyle
+## Preview  AlertStyle
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertStyle) {
     SimpleAlert = 0,
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger,AlertStyle) {
 };
 ```
 ![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/AlertStyle.jpg)
-### Preview  AlertTheme
+## Preview  AlertTheme
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertTheme) {
     YellowAlert = 0,
@@ -26,12 +26,12 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
 ```
 ![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg)
 
-### SimpleAlert
+## SimpleAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert];
 alert.contentText = @"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
 ```
-### ConfirmAlert
+## ConfirmAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:ConfirmAlert];
 alert.theme = Purple1Alert;
@@ -42,7 +42,7 @@ alert.confirmButtonBlock = ^(){
     NSLog(@"Click on the Ok");
 };
 ```
-### CancelAndConfirmAlert
+## CancelAndConfirmAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:CancelAndConfirmAlert];
 alert.headerTitle = @"CancelAndConfirmAlert";
