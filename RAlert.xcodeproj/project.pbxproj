@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		87F3E0F6DE5392898C72AF1E /* libPods-RAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E373A98319280E1B0FB13 /* libPods-RAlert.a */; };
+		B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */; };
+		B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B71DB0AD7600A076C7 /* Theme.jpg */; };
 		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
 		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
 		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		56656B9DB8C05746D8AA209D /* Pods-RAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.release.xcconfig"; sourceTree = "<group>"; };
 		58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertStyle.jpg; sourceTree = "<group>"; };
+		B092E8B71DB0AD7600A076C7 /* Theme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Theme.jpg; sourceTree = "<group>"; };
 		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B092E8B51DB0AD6200A076C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */,
+				B092E8B71DB0AD7600A076C7 /* Theme.jpg */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		B0FA76E41DAE4F3D00677D11 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +138,7 @@
 		B0FA76EF1DAE4F3D00677D11 /* RAlert */ = {
 			isa = PBXGroup;
 			children = (
+				B092E8B51DB0AD6200A076C7 /* Resource */,
 				B0FA77261DAE4F7A00677D11 /* RAlertView */,
 				B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */,
 				B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */,
@@ -299,9 +313,11 @@
 				B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */,
 				B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */,
 				B0FA76FD1DAE4F3D00677D11 /* Assets.xcassets in Resources */,
+				B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */,
 				B0FA76FB1DAE4F3D00677D11 /* Main.storyboard in Resources */,
 				B0FA772B1DAE582500677D11 /* closed@2x.png in Resources */,
 				B0FA772C1DAE582500677D11 /* closed.png in Resources */,
+				B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
