@@ -1,4 +1,6 @@
-# RAlertView
+ ![Logo](https://github.com/roycms/RAlertView/blob/master/RAlert/log.png)
+ RAlertView
+===
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
 ## Installation
