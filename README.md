@@ -1,6 +1,10 @@
 # RAlertView
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
+### Installation
+- Depend on the project ` Masonry `and ` HexColors ` Import  `#import "Masonry.h"` `#import "HexColors.h"`
+- Import the main header file：`#import "RAlertView.h"`
+
 ### Preview  AlertStyle
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertStyle) {
