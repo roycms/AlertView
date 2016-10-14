@@ -10,7 +10,6 @@ AlertView A pop-up framework, Can be simple and convenient to join your project.
 ## cocoapods 
 `  pod 'AlertView' `
 
-RAlertView.podspec
 ## Preview  AlertStyle
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertStyle) {
