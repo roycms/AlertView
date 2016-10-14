@@ -76,14 +76,17 @@
         case SimpleAlert:
             [self viewInitUI];
             [self simpleAlertViewInitUI];
+            [self animate];
             break;
         case ConfirmAlert:
             [self viewInitUI];
             [self confirmAlertViewInitUI];
+            [self animate];
             break;
         case CancelAndConfirmAlert:
             [self viewInitUI];
             [self cancelAndConfirmAlertViewInitUI];
+            [self animate];
             break;
     }
 }
@@ -94,7 +97,7 @@
     
     [window addSubview:self];
     [self addSubview:self.mainView];
-    [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.89]];
+    [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
     [self.mainView insertSubview:self.closedButton atIndex:999];
     [self.mainView addSubview:self.headerTitleLabel];
     [self.mainView insertSubview:self.contentView atIndex:0];
@@ -177,6 +180,19 @@
         make.height.equalTo(@40);
         make.bottom.equalTo(self.mainView);
         make.top.equalTo(self.contentTextLabel.mas_bottom).offset(10);
+    }];
+}
+
+-(void)animate{
+    
+   [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
+    [UIView animateWithDuration:0.12 animations:^{
+        [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
+    }];
+    
+    self.mainView.transform = CGAffineTransformMakeTranslation(0, 600);
+    [UIView animateWithDuration:0.12 animations:^{
+        self.mainView.transform = CGAffineTransformMakeTranslation(0, 0);
     }];
 }
 
