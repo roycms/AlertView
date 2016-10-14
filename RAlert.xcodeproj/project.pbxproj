@@ -11,6 +11,10 @@
 		B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */; };
 		B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B71DB0AD7600A076C7 /* Theme.jpg */; };
 		B092E8BB1DB0B83000A076C7 /* log.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8BA1DB0B83000A076C7 /* log.png */; };
+		B092E8D61DB0C27200A076C7 /* closed.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D11DB0C27200A076C7 /* closed.png */; };
+		B092E8D71DB0C27200A076C7 /* closed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D21DB0C27200A076C7 /* closed@2x.png */; };
+		B092E8D81DB0C27200A076C7 /* closed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D31DB0C27200A076C7 /* closed@3x.png */; };
+		B092E8D91DB0C27200A076C7 /* RAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092E8D51DB0C27200A076C7 /* RAlertView.m */; };
 		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
 		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
 		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
@@ -19,10 +23,6 @@
 		B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FA76FE1DAE4F3D00677D11 /* LaunchScreen.storyboard */; };
 		B0FA770B1DAE4F3E00677D11 /* RAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA770A1DAE4F3E00677D11 /* RAlertTests.m */; };
 		B0FA77161DAE4F3E00677D11 /* RAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA77151DAE4F3E00677D11 /* RAlertUITests.m */; };
-		B0FA77251DAE4F7600677D11 /* RAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA77241DAE4F7600677D11 /* RAlertView.m */; };
-		B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77271DAE582500677D11 /* closed@3x.png */; };
-		B0FA772B1DAE582500677D11 /* closed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77281DAE582500677D11 /* closed@2x.png */; };
-		B0FA772C1DAE582500677D11 /* closed.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FA77291DAE582500677D11 /* closed.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +48,11 @@
 		B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertStyle.jpg; sourceTree = "<group>"; };
 		B092E8B71DB0AD7600A076C7 /* Theme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Theme.jpg; sourceTree = "<group>"; };
 		B092E8BA1DB0B83000A076C7 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
+		B092E8D11DB0C27200A076C7 /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
+		B092E8D21DB0C27200A076C7 /* closed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@2x.png"; sourceTree = "<group>"; };
+		B092E8D31DB0C27200A076C7 /* closed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@3x.png"; sourceTree = "<group>"; };
+		B092E8D41DB0C27200A076C7 /* RAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAlertView.h; sourceTree = "<group>"; };
+		B092E8D51DB0C27200A076C7 /* RAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAlertView.m; sourceTree = "<group>"; };
 		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,11 +69,6 @@
 		B0FA77111DAE4F3E00677D11 /* RAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA77151DAE4F3E00677D11 /* RAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAlertUITests.m; sourceTree = "<group>"; };
 		B0FA77171DAE4F3E00677D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B0FA77231DAE4F7600677D11 /* RAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAlertView.h; sourceTree = "<group>"; };
-		B0FA77241DAE4F7600677D11 /* RAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAlertView.m; sourceTree = "<group>"; };
-		B0FA77271DAE582500677D11 /* closed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@3x.png"; sourceTree = "<group>"; };
-		B0FA77281DAE582500677D11 /* closed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@2x.png"; sourceTree = "<group>"; };
-		B0FA77291DAE582500677D11 /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
 		D54E373A98319280E1B0FB13 /* libPods-RAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAlert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -116,9 +116,22 @@
 			name = Resource;
 			sourceTree = "<group>";
 		};
+		B092E8D01DB0C27200A076C7 /* RAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				B092E8D11DB0C27200A076C7 /* closed.png */,
+				B092E8D21DB0C27200A076C7 /* closed@2x.png */,
+				B092E8D31DB0C27200A076C7 /* closed@3x.png */,
+				B092E8D41DB0C27200A076C7 /* RAlertView.h */,
+				B092E8D51DB0C27200A076C7 /* RAlertView.m */,
+			);
+			path = RAlertView;
+			sourceTree = "<group>";
+		};
 		B0FA76E41DAE4F3D00677D11 = {
 			isa = PBXGroup;
 			children = (
+				B092E8D01DB0C27200A076C7 /* RAlertView */,
 				B0FA76EF1DAE4F3D00677D11 /* RAlert */,
 				B0FA77091DAE4F3E00677D11 /* RAlertTests */,
 				B0FA77141DAE4F3E00677D11 /* RAlertUITests */,
@@ -142,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				B092E8B51DB0AD6200A076C7 /* Resource */,
-				B0FA77261DAE4F7A00677D11 /* RAlertView */,
 				B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */,
 				B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */,
 				B0FA76F61DAE4F3D00677D11 /* ViewController.h */,
@@ -159,9 +171,6 @@
 		B0FA76F01DAE4F3D00677D11 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B0FA77271DAE582500677D11 /* closed@3x.png */,
-				B0FA77281DAE582500677D11 /* closed@2x.png */,
-				B0FA77291DAE582500677D11 /* closed.png */,
 				B0FA76F11DAE4F3D00677D11 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -183,15 +192,6 @@
 				B0FA77171DAE4F3E00677D11 /* Info.plist */,
 			);
 			path = RAlertUITests;
-			sourceTree = "<group>";
-		};
-		B0FA77261DAE4F7A00677D11 /* RAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				B0FA77231DAE4F7600677D11 /* RAlertView.h */,
-				B0FA77241DAE4F7600677D11 /* RAlertView.m */,
-			);
-			name = RAlertView;
 			sourceTree = "<group>";
 		};
 		E5AFF29AC7B58D8816CE449B /* Pods */ = {
@@ -314,13 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B092E8BB1DB0B83000A076C7 /* log.png in Resources */,
+				B092E8D61DB0C27200A076C7 /* closed.png in Resources */,
 				B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */,
-				B0FA772A1DAE582500677D11 /* closed@3x.png in Resources */,
 				B0FA76FD1DAE4F3D00677D11 /* Assets.xcassets in Resources */,
+				B092E8D71DB0C27200A076C7 /* closed@2x.png in Resources */,
 				B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */,
+				B092E8D81DB0C27200A076C7 /* closed@3x.png in Resources */,
 				B0FA76FB1DAE4F3D00677D11 /* Main.storyboard in Resources */,
-				B0FA772B1DAE582500677D11 /* closed@2x.png in Resources */,
-				B0FA772C1DAE582500677D11 /* closed.png in Resources */,
 				B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,8 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B092E8D91DB0C27200A076C7 /* RAlertView.m in Sources */,
 				B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */,
-				B0FA77251DAE4F7600677D11 /* RAlertView.m in Sources */,
 				B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */,
 				B0FA76F21DAE4F3D00677D11 /* main.m in Sources */,
 			);
