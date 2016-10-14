@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "AlertView A pop-up framework, Can be simple and convenient to join your project"
+  s.description  = %{
+    AlertView A pop-up framework, Can be simple and convenient to join your project.
+  }
 
   s.homepage     = "https://github.com/roycms/RAlertView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,7 +39,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+s.license          = { :type => "MIT", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -89,8 +91,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "RAlertView/*.*"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "RAlertView/*.*"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -117,7 +119,7 @@ Pod::Spec.new do |s|
 
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
-
+  s.ios.frameworks = 'Foundation', 'UIKit'
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
@@ -132,5 +134,9 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-s.dependency 'Masonry'
+
+s.dependency "Masonry"
+s.dependency "HexColors", "~> 4.0.0"
+s.ios.deployment_target = '8.0' # minimum SDK with autolayout
+# s.osx.deployment_target = '10.7' # minimum SDK with autolayout
 end
