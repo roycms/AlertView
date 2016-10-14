@@ -106,7 +106,6 @@
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
         make.width.equalTo(self.mas_width).multipliedBy(0.7);
-        make.height.equalTo(self.mainView.mas_width).multipliedBy(0.6);
     }];
     [self.closedButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mainView);
@@ -133,9 +132,10 @@
     [self.contentTextLabel sizeToFit];
 
     [self.contentTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self.contentView);
+        make.top.equalTo(self.contentView).offset(10);
         make.left.equalTo(self.contentView);
         make.right.equalTo(self.contentView);
+        make.bottom.equalTo(self.contentView).offset(-10);
     }];
 }
 
@@ -143,18 +143,19 @@
     
     [self.mainView addSubview:self.confirmButton];
     [self.contentView addSubview:self.contentTextLabel];
-    
-    [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.equalTo(self.mainView);
-        make.bottom.equalTo(self.mainView);
-        make.height.offset(40);
-    }];
-    
+
     [self.contentTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(10);
         make.left.equalTo(self.contentView);
         make.right.equalTo(self.contentView);
-    }];}
+    }];
+    [self.confirmButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(self.contentTextLabel.mas_bottom).offset(10);
+        make.left.right.equalTo(self.mainView);
+        make.bottom.equalTo(self.mainView);
+        make.height.offset(40);
+    }];
+}
 
 -(void)cancelAndConfirmAlertViewInitUI{
     [self.mainView addSubview:self.cancelButton];
@@ -175,6 +176,7 @@
     [arrayM mas_makeConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@40);
         make.bottom.equalTo(self.mainView);
+        make.top.equalTo(self.contentTextLabel.mas_bottom).offset(10);
     }];
 }
 
