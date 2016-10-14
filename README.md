@@ -1,6 +1,27 @@
 # RAlertView
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
+### Preview  AlertStyle
+```objective-c
+typedef NS_ENUM(NSInteger,AlertStyle) {
+    SimpleAlert = 0,
+    ConfirmAlert,
+    CancelAndConfirmAlert,
+};
+```
+![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/AlertStyle.jpg)
+### Preview  AlertTheme
+```objective-c
+typedef NS_ENUM(NSInteger,AlertTheme) {
+    YellowAlert = 0,
+    GreenAlert,
+    BlueAlert,
+    Purple1Alert,
+    Purple2Alert,
+};
+```
+![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg)
+
 ### SimpleAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert];
