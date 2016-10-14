@@ -3,6 +3,11 @@
 ===
 AlertView A pop-up framework, Can be simple and convenient to join your project.
 
+[![Cocoapods](https://github.com/roycms/RAlertView/blob/master/RAlert/pod.svg)](http://cocoapods.org/?q=RAlertView)
+[![Pod License](https://github.com/roycms/RAlertView/blob/master/RAlert/MIT.svg)](https://github.com/roycms/RAlertView/blob/master/LICENSE)
+
+
+
 ## Installation
 - Depend on the project ` Masonry `and ` HexColors ` Import  `#import "Masonry.h"` `#import "HexColors.h"`
 - Import the main header file：`#import "RAlertView.h"`
