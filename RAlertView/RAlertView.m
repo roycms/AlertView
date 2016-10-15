@@ -100,17 +100,17 @@
         case SimpleAlert:
             [self viewInitUI];
             [self simpleAlertViewInitUI];
-            [self animate];
+            [self animateSenior];
             break;
         case ConfirmAlert:
             [self viewInitUI];
             [self confirmAlertViewInitUI];
-            [self animate];
+            [self animateSenior];
             break;
         case CancelAndConfirmAlert:
             [self viewInitUI];
             [self cancelAndConfirmAlertViewInitUI];
-            [self animate];
+            [self animateSenior];
             break;
     }
 }
@@ -219,6 +219,15 @@
     self.mainView.transform = CGAffineTransformMakeTranslation(0, 600);
     [UIView animateWithDuration:0.12 animations:^{
         self.mainView.transform = CGAffineTransformMakeTranslation(0, 0);
+    }];
+}
+
+-(void)animateSenior{
+
+    self.mainView.transform = CGAffineTransformMakeTranslation(0, 600);
+    [UIView animateWithDuration:0.2 delay:0 usingSpringWithDamping:0.35 initialSpringVelocity:0.5 options:UIViewAnimationOptionCurveLinear animations:^{
+        self.mainView.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) {
     }];
 }
 
