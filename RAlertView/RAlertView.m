@@ -54,24 +54,24 @@
     
     switch (theme) {
         case YellowAlert://#fddb43
-            [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#fddb43"]];
-            [_confirmButton setTitleColor:[UIColor hx_colorWithHexRGBAString:@"#3d3d3d"] forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#fddb43"]];
+            [self.confirmButton setTitleColor:[UIColor hx_colorWithHexRGBAString:@"#3d3d3d"] forState:UIControlStateNormal];
             break;
         case GreenAlert://#4CBE77
-            [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#4CBE77"]];
-            [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#4CBE77"]];
+            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case BlueAlert://#295DC0
-            [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#295DC0"]];
-            [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#295DC0"]];
+            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case Purple1Alert://#74225C
-            [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#74225C"]];
-            [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#74225C"]];
+            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case Purple2Alert://#B655FF
-            [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#B655FF"]];
-            [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#B655FF"]];
+            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             
             break;
     }
