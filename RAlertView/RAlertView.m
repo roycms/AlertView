@@ -77,6 +77,13 @@
     }
 }
 
+-(void)setIsClickBackgroundCloseWindow:(BOOL)IsClickBackgroundCloseWindow{
+    if(IsClickBackgroundCloseWindow){
+        UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(exit)];
+        [self addGestureRecognizer:tapGesture];
+    }
+}
+
 -(void)setHeaderTitle:(NSString *)headerTitle{
     [self.headerTitleLabel setText:headerTitle];
 }

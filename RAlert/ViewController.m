@@ -21,6 +21,7 @@
 }
 - (IBAction)bt1:(id)sender {
     RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert width:0.8];
+    alert.IsClickBackgroundCloseWindow = YES;
     alert.contentText = @"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
 }
 - (IBAction)bt2:(id)sender {

@@ -35,5 +35,5 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
 @property (nonatomic,strong)UIView *contentView;
 @property (nonatomic,strong)NSString *confirmButtonText;
 @property (nonatomic,strong)NSString *cancelButtonText;
-
+@property (nonatomic,assign)BOOL IsClickBackgroundCloseWindow;
 @end
