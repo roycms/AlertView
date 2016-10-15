@@ -32,8 +32,9 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
 @property (nonatomic,assign)AlertTheme theme;
 @property (nonatomic,strong)NSString *headerTitle;
 @property (nonatomic,strong)NSString *contentText;
+-(void)setContentText:(NSString *)contentText isAlignmentCenter:(BOOL)isAlignmentCenter;
 @property (nonatomic,strong)UIView *contentView;
 @property (nonatomic,strong)NSString *confirmButtonText;
 @property (nonatomic,strong)NSString *cancelButtonText;
-@property (nonatomic,assign)BOOL IsClickBackgroundCloseWindow;
+@property (nonatomic,assign)BOOL isClickBackgroundCloseWindow;
 @end

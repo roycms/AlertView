@@ -76,9 +76,8 @@
             break;
     }
 }
-
--(void)setIsClickBackgroundCloseWindow:(BOOL)IsClickBackgroundCloseWindow{
-    if(IsClickBackgroundCloseWindow){
+-(void)setIsClickBackgroundCloseWindow:(BOOL)isClickBackgroundCloseWindow{
+    if(isClickBackgroundCloseWindow){
         UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(exit)];
         [self addGestureRecognizer:tapGesture];
     }
@@ -88,9 +87,15 @@
     [self.headerTitleLabel setText:headerTitle];
 }
 -(void)setContentText:(NSString *)contentText{
+    [self setContentText:contentText isAlignmentCenter:NO];
+}
+-(void)setContentText:(NSString *)contentText isAlignmentCenter:(BOOL)isAlignmentCenter{
     NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:contentText];
     NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineSpacing:5];
+    if (isAlignmentCenter) {
+        paragraphStyle.alignment = NSTextAlignmentCenter;
+    }
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [contentText length])];
     [self.contentTextLabel setAttributedText:attributedString];
 }
