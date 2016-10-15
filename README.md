@@ -37,6 +37,25 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
 ```
 ![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg)
 
+## Some feature set
+* Click on the background and any position hidden pop-up window
+```objective-c
+alert.isClickBackgroundCloseWindow = YES;
+```
+* Set bounced content text center
+```objective-c
+[alert setContentText:@"is ContentText" isAlignmentCenter:YES];
+```
+
+## init RAlertView
+* initWithStyle AlertStyle
+```objective-c
+RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert];
+```
+* initWithStyle AlertStyle and width
+```objective-c
+RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert width:0.8];
+```
 ## SimpleAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert];
