@@ -15,8 +15,6 @@
 @property(nonatomic,strong)UIButton *confirmButton;
 @property(nonatomic,strong)UIButton *cancelButton;
 @property(nonatomic,strong)UIView *mainView;
-
-@property(nonatomic,assign)CGFloat *width;
 @end
 @implementation RAlertView
 
@@ -31,8 +29,8 @@
 - (instancetype)initWithStyle:(AlertStyle)style width:(CGFloat)width{
     self = [super init];
     if (self) {
-        self.width = &(width);
         [self initWindow:style];
+        [self setAlertWidth:width];
     }
     return self;
 }
@@ -41,13 +39,13 @@
     
     [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
         if (width > 1) {
-            make.width.offset(width).priorityHigh();
+            make.width.offset(width);
         }
-        else if(width > 0 && width < 1){
-            make.width.equalTo(self.mas_width).multipliedBy(width).priorityHigh();
+        else if(width > 0 && width <= 1){
+            make.width.offset([UIScreen mainScreen].bounds.size.width * width);
         }
         else{
-            make.width.equalTo(self.mas_width).multipliedBy(0.7).priorityHigh();
+            make.width.offset([UIScreen mainScreen].bounds.size.width * 0.7);
         }
     }];
 }
@@ -131,24 +129,13 @@
     [self mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(window);
     }];
+    self.mainView.translatesAutoresizingMaskIntoConstraints =NO;
     
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(self);
-        if(self.width){
-            if (*(self.width) > 1) {
-                make.width.offset(*(self.width));
-            }
-            else if(*(self.width) > 0 && *(self.width) <= 1){
-                make.width.equalTo(self.mas_width).multipliedBy(*(self.width));
-            }
-            else{
-                make.width.equalTo(self.mas_width).multipliedBy(0.7);
-            }
-        }
-        else{
-            make.width.equalTo(self.mas_width).multipliedBy(0.7).priorityHigh();
-        }
+        make.center.equalTo(self.mainView.superview);
+        make.width.offset([UIScreen mainScreen].bounds.size.width * 0.7);
     }];
+
     [self.closedButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mainView);
         make.right.equalTo(self.mainView);
