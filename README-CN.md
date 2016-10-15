@@ -10,8 +10,8 @@ AlertView 是一个ios弹窗框架，可以很简单的集成到自己的项目�
 
 
 ## 安装
-- 依赖 ` Masonry ` 和 ` HexColors ` 框架，如果项目为引入请导入这两个框架通过pod安装则自动下载依赖
-- 在需要的地方导入：`#import "RAlertView.h"`
+- 手动安装依赖 ` Masonry ` 和 ` HexColors ` 框架，如果项目没有引入请导入这两个框架
+- 在需要的地方导入：`#import "RAlertView.h"` 你懂的
 
 ## cocoapods 安装
 `  pod 'AlertView' `
