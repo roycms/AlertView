@@ -25,6 +25,7 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
 
 @interface RAlertView : UIView
 - (instancetype)initWithStyle:(AlertStyle)style;
+- (instancetype)initWithStyle:(AlertStyle)style width:(CGFloat)width;
 - (void)exit;
 @property (nonatomic, copy) void(^confirmButtonBlock)();
 @property (nonatomic, copy) void(^cancelWindowBlock)();

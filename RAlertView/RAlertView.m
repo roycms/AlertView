@@ -15,6 +15,8 @@
 @property(nonatomic,strong)UIButton *confirmButton;
 @property(nonatomic,strong)UIButton *cancelButton;
 @property(nonatomic,strong)UIView *mainView;
+
+@property(nonatomic,assign)CGFloat *width;
 @end
 @implementation RAlertView
 
@@ -26,8 +28,32 @@
     return self;
 }
 
--(void)setTheme:(AlertTheme)theme{
+- (instancetype)initWithStyle:(AlertStyle)style width:(CGFloat)width{
+    self = [super init];
+    if (self) {
+        self.width = &(width);
+        [self initWindow:style];
+    }
+    return self;
+}
 
+-(void)setAlertWidth:(CGFloat)width{
+    
+    [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
+        if (width > 1) {
+            make.width.offset(width).priorityHigh();
+        }
+        else if(width > 0 && width < 1){
+            make.width.equalTo(self.mas_width).multipliedBy(width).priorityHigh();
+        }
+        else{
+            make.width.equalTo(self.mas_width).multipliedBy(0.7).priorityHigh();
+        }
+    }];
+}
+
+-(void)setTheme:(AlertTheme)theme{
+    
     switch (theme) {
         case YellowAlert://#fddb43
             [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#fddb43"]];
@@ -48,7 +74,7 @@
         case Purple2Alert://#B655FF
             [_confirmButton setBackgroundColor:[UIColor hx_colorWithHexRGBAString:@"#B655FF"]];
             [_confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-
+            
             break;
     }
 }
@@ -70,7 +96,7 @@
     [self.cancelButton setTitle:cancelButtonText forState:UIControlStateNormal];
 }
 
--(void)initWindow:(AlertStyle)style {
+-(void)initWindow:(AlertStyle)style{
     
     switch (style) {
         case SimpleAlert:
@@ -108,7 +134,20 @@
     
     [self.mainView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
-        make.width.equalTo(self.mas_width).multipliedBy(0.7);
+        if(self.width){
+            if (*(self.width) > 1) {
+                make.width.offset(*(self.width));
+            }
+            else if(*(self.width) > 0 && *(self.width) <= 1){
+                make.width.equalTo(self.mas_width).multipliedBy(*(self.width));
+            }
+            else{
+                make.width.equalTo(self.mas_width).multipliedBy(0.7);
+            }
+        }
+        else{
+            make.width.equalTo(self.mas_width).multipliedBy(0.7).priorityHigh();
+        }
     }];
     [self.closedButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.mainView);
@@ -133,7 +172,7 @@
     [self.contentTextLabel setFont:[UIFont systemFontOfSize:15]];
     [self.contentView addSubview:self.contentTextLabel];
     [self.contentTextLabel sizeToFit];
-
+    
     [self.contentTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(10);
         make.left.equalTo(self.contentView);
@@ -146,7 +185,7 @@
     
     [self.mainView addSubview:self.confirmButton];
     [self.contentView addSubview:self.contentTextLabel];
-
+    
     [self.contentTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(10);
         make.left.equalTo(self.contentView);
@@ -185,7 +224,7 @@
 
 -(void)animate{
     
-   [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
+    [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
     [UIView animateWithDuration:0.12 animations:^{
         [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0.8]];
     }];
