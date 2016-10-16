@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ralertview by roycms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Ralertview</h1>
+      <h2 class="project-tagline">AlertView, Ios popup window, A pop-up framework, Can be simple and convenient to join your project.</h2>
+      <a href="https://github.com/roycms/RAlertView" class="btn">View on GitHub</a>
+      <a href="https://github.com/roycms/RAlertView/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/roycms/RAlertView/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><img src="https://github.com/roycms/RAlertView/blob/master/RAlert/logo.png" alt="Logo"></p>
+
+<h1>
+<a id="-ralertview" class="anchor" href="#-ralertview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a> RAlertView</h1>
+
+<p>AlertView A pop-up framework, Can be simple and convenient to join your project.</p>
+
+<p><a href="https://github.com/roycms/RAlertView"><img src="https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff.svg?maxAge=2592000?style=flat-square" alt="Shippable"></a>
+<a href="http://cocoapods.org/?q=RAlertView"><img src="https://img.shields.io/badge/pod-0.0.1-red.svg" alt="CocoaPods"></a>
+<a href="https://github.com/roycms/RAlertView/blob/master/LICENSE"><img src="https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=flat-square" alt="Packagist"></a>
+<a href="mailto:roycms@qq.com"><img src="https://img.shields.io/badge/%20email%20-%20roycms%40qq.com%20-yellowgreen.svg" alt="email"></a>
+<a href="https://github.com/roycms/RAlertView/blob/master/README-CN.md"><img src="https://img.shields.io/badge/%E4%B8%AD%E6%96%87-DOC-orange.svg" alt="doc"></a></p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ul>
+<li>Depend on the project <code>Masonry</code>and <code>HexColors</code> Import  <code>#import "Masonry.h"</code> <code>#import "HexColors.h"</code>
+</li>
+<li>Import the main header file：<code>#import "RAlertView.h"</code>
+</li>
+</ul>
+
+<h2>
+<a id="cocoapods" class="anchor" href="#cocoapods" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>cocoapods</h2>
+
+<p><code>pod 'AlertView'</code></p>
+
+<h2>
+<a id="preview--alertstyle" class="anchor" href="#preview--alertstyle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview  AlertStyle</h2>
+
+<div class="highlight highlight-source-objc"><pre><span class="pl-k">typedef</span> <span class="pl-en">NS_ENUM</span>(<span class="pl-c1">NSInteger</span>,AlertStyle) {
+    SimpleAlert = <span class="pl-c1">0</span>,
+    ConfirmAlert,
+    CancelAndConfirmAlert,
+};</pre></div>
+
+<p><img src="https://github.com/roycms/RAlertView/blob/master/RAlert/AlertStyle.jpg" alt="RAlertView Preview"></p>
+
+<h2>
+<a id="preview--alerttheme" class="anchor" href="#preview--alerttheme" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview  AlertTheme</h2>
+
+<div class="highlight highlight-source-objc"><pre><span class="pl-k">typedef</span> <span class="pl-en">NS_ENUM</span>(<span class="pl-c1">NSInteger</span>,AlertTheme) {
+    YellowAlert = <span class="pl-c1">0</span>,
+    GreenAlert,
+    BlueAlert,
+    Purple1Alert,
+    Purple2Alert,
+};</pre></div>
+
+<p><img src="https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg" alt="RAlertView Preview"></p>
+
+<h2>
+<a id="some-feature-set" class="anchor" href="#some-feature-set" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some feature set</h2>
+
+<ul>
+<li>Click on the background and any position hidden pop-up window</li>
+</ul>
+
+<div class="highlight highlight-source-objc"><pre>alert.isClickBackgroundCloseWindow = <span class="pl-c1">YES</span>;</pre></div>
+
+<ul>
+<li>Set bounced content text center</li>
+</ul>
+
+<div class="highlight highlight-source-objc"><pre>[alert <span class="pl-c1">setContentText:</span><span class="pl-s"><span class="pl-pds">@"</span>is ContentText<span class="pl-pds">"</span></span> <span class="pl-c1">isAlignmentCenter:</span><span class="pl-c1">YES</span>];</pre></div>
+
+<h2>
+<a id="init-ralertview" class="anchor" href="#init-ralertview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>init RAlertView</h2>
+
+<ul>
+<li>initWithStyle AlertStyle</li>
+</ul>
+
+<div class="highlight highlight-source-objc"><pre>RAlertView *alert = [[RAlertView <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>SimpleAlert];</pre></div>
+
+<ul>
+<li>initWithStyle AlertStyle and width</li>
+</ul>
+
+<div class="highlight highlight-source-objc"><pre>RAlertView *alert = [[RAlertView <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>SimpleAlert <span class="pl-c1">width:</span><span class="pl-c1">0.8</span>];</pre></div>
+
+<h2>
+<a id="simplealert" class="anchor" href="#simplealert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SimpleAlert</h2>
+
+<div class="highlight highlight-source-objc"><pre>RAlertView *alert = [[RAlertView <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>SimpleAlert];
+alert.contentText = <span class="pl-s"><span class="pl-pds">@"</span>SimpleAlert <span class="pl-cce">\n</span>AlertView A pop-up framework, Can be simple and convenient to join your project<span class="pl-pds">"</span></span>;</pre></div>
+
+<h2>
+<a id="confirmalert" class="anchor" href="#confirmalert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ConfirmAlert</h2>
+
+<div class="highlight highlight-source-objc"><pre>RAlertView *alert = [[RAlertView <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>ConfirmAlert];
+alert.theme = Purple1Alert;
+alert.headerTitle = <span class="pl-s"><span class="pl-pds">@"</span>ConfirmAlert<span class="pl-pds">"</span></span>;
+alert.contentText = <span class="pl-s"><span class="pl-pds">@"</span>AlertView A pop-up framework, Can be simple and convenient to join your project<span class="pl-pds">"</span></span>;
+alert.confirmButtonText = <span class="pl-s"><span class="pl-pds">@"</span>Ok<span class="pl-pds">"</span></span>;
+alert.confirmButtonBlock = ^(){
+    <span class="pl-c1">NSLog</span>(<span class="pl-s"><span class="pl-pds">@"</span>Click on the Ok<span class="pl-pds">"</span></span>);
+};</pre></div>
+
+<h2>
+<a id="cancelandconfirmalert" class="anchor" href="#cancelandconfirmalert" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CancelAndConfirmAlert</h2>
+
+<div class="highlight highlight-source-objc"><pre>RAlertView *alert = [[RAlertView <span class="pl-c1">alloc</span>] <span class="pl-c1">initWithStyle:</span>CancelAndConfirmAlert];
+alert.headerTitle = <span class="pl-s"><span class="pl-pds">@"</span>CancelAndConfirmAlert<span class="pl-pds">"</span></span>;
+alert.contentText = <span class="pl-s"><span class="pl-pds">@"</span>AlertView A pop-up framework, Can be simple and convenient to join your project<span class="pl-pds">"</span></span>;
+alert.confirmButtonText = <span class="pl-s"><span class="pl-pds">@"</span>Ok<span class="pl-pds">"</span></span>;
+alert.cancelButtonText = <span class="pl-s"><span class="pl-pds">@"</span>Cancel<span class="pl-pds">"</span></span>;
+alert.confirmButtonBlock = ^(){
+    <span class="pl-c1">NSLog</span>(<span class="pl-s"><span class="pl-pds">@"</span>Click on the Ok<span class="pl-pds">"</span></span>);
+};
+alert.cancelWindowBlock = ^(){
+    <span class="pl-c1">NSLog</span>(<span class="pl-s"><span class="pl-pds">@"</span>Click on the Cancel<span class="pl-pds">"</span></span>);
+};</pre></div>
+
+<h2>
+<a id="期待" class="anchor" href="#%E6%9C%9F%E5%BE%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>期待</h2>
+
+<ul>
+<li>如果在使用过程中遇到BUG，希望你能Issues我，谢谢（或者尝试下载最新的框架代码看看BUG修复没有）</li>
+<li>如果在使用过程中发现功能不够用，希望你能Issues我，我非常想为这个框架增加更多好用的功能，谢谢</li>
+<li>如果你想为RAlertView输出代码，请拼命Pull Requests我</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/roycms/RAlertView">Ralertview</a> is maintained by <a href="https://github.com/roycms">roycms</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
