@@ -6,10 +6,13 @@
 //  Copyright © 2016年 roycms. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "HexColors.h"
-#import "Masonry.h"
+#define RGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
+#import <UIKit/UIKit.h>
+#import "Masonry.h"
 typedef NS_ENUM(NSInteger,AlertStyle) {
     SimpleAlert = 0,
     ConfirmAlert,
