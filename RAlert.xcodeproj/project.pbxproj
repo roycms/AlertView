@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		87F3E0F6DE5392898C72AF1E /* libPods-RAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54E373A98319280E1B0FB13 /* libPods-RAlert.a */; };
+		B0778C6D1DB8EE3500DFBC72 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B0778C6C1DB8EE3500DFBC72 /* bg.jpg */; };
 		B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */; };
 		B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B092E8B71DB0AD7600A076C7 /* Theme.jpg */; };
 		B092E8BB1DB0B83000A076C7 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8BA1DB0B83000A076C7 /* logo.png */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		56656B9DB8C05746D8AA209D /* Pods-RAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.release.xcconfig"; sourceTree = "<group>"; };
 		58216D0420FF1E3BAE70D4F8 /* Pods-RAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAlert/Pods-RAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		B0778C6C1DB8EE3500DFBC72 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AlertStyle.jpg; sourceTree = "<group>"; };
 		B092E8B71DB0AD7600A076C7 /* Theme.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Theme.jpg; sourceTree = "<group>"; };
 		B092E8BA1DB0B83000A076C7 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		B092E8B51DB0AD6200A076C7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B0778C6C1DB8EE3500DFBC72 /* bg.jpg */,
 				B092E8BA1DB0B83000A076C7 /* logo.png */,
 				B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */,
 				B092E8B71DB0AD7600A076C7 /* Theme.jpg */,
@@ -313,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0778C6D1DB8EE3500DFBC72 /* bg.jpg in Resources */,
 				B092E8BB1DB0B83000A076C7 /* logo.png in Resources */,
 				B092E8D61DB0C27200A076C7 /* closed.png in Resources */,
 				B0FA77001DAE4F3D00677D11 /* LaunchScreen.storyboard in Resources */,

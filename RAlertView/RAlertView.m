@@ -54,23 +54,23 @@
     
     switch (theme) {
         case YellowAlert://#fddb43
-            [self.confirmButton setBackgroundColor:RGB(0Xfddb43)];
-            [self.confirmButton setTitleColor:RGB(0X3D3D3D) forState:UIControlStateNormal];
+            [self.confirmButton setBackgroundColor:RGB16(0Xfddb43)];
+            [self.confirmButton setTitleColor:RGB16(0X3D3D3D) forState:UIControlStateNormal];
             break;
         case GreenAlert://#4CBE77
-            [self.confirmButton setBackgroundColor:RGB(0X4CBE77)];
+            [self.confirmButton setBackgroundColor:RGB16(0X4CBE77)];
             [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case BlueAlert://#295DC0
-            [self.confirmButton setBackgroundColor:RGB(0X295DC0)];
+            [self.confirmButton setBackgroundColor:RGB16(0X295DC0)];
             [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case Purple1Alert://#74225C
-            [self.confirmButton setBackgroundColor:RGB(0X74225C)];
+            [self.confirmButton setBackgroundColor:RGB16(0X74225C)];
             [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             break;
         case Purple2Alert://#B655FF
-            [self.confirmButton setBackgroundColor:RGB(0XB655FF)];
+            [self.confirmButton setBackgroundColor:RGB16(0XB655FF)];
             [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             
             break;
@@ -276,10 +276,10 @@
 -(UIButton *)confirmButton{
     if(_confirmButton == nil){
         _confirmButton = [[UIButton alloc]init];
-        [_confirmButton setBackgroundColor:RGB(0Xfddb43)];
+        [_confirmButton setBackgroundColor:RGB16(0Xfddb43)];
         [_confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
         [_confirmButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_confirmButton setTitleColor:RGB(0X3d3d3d) forState:UIControlStateNormal];
+        [_confirmButton setTitleColor:RGB16(0X3d3d3d) forState:UIControlStateNormal];
         [_confirmButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_confirmButton addTarget:self action:@selector(confirmButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -288,10 +288,10 @@
 -(UIButton *)cancelButton{
     if(_cancelButton == nil){
         _cancelButton = [[UIButton alloc]init];
-        [_cancelButton setBackgroundColor:RGB(0XEBECED)];
+        [_cancelButton setBackgroundColor:RGB16(0XEBECED)];
         [_cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
         [_cancelButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_cancelButton setTitleColor:RGB(0X3d3d3d) forState:UIControlStateNormal];
+        [_cancelButton setTitleColor:RGB16(0X3d3d3d) forState:UIControlStateNormal];
         [_cancelButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
         [_cancelButton addTarget:self action:@selector(cancelButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -312,7 +312,7 @@
         _headerTitleLabel = [[UILabel alloc]init];
         [_headerTitleLabel setFont:[UIFont systemFontOfSize:15]];
         [_headerTitleLabel setTextAlignment:NSTextAlignmentCenter];
-        [_headerTitleLabel setTextColor:RGB(0X3d3d3d)];
+        [_headerTitleLabel setTextColor:RGB16(0X3d3d3d)];
     }
     return _headerTitleLabel;
 }
@@ -329,7 +329,7 @@
     if (_contentTextLabel == nil) {
         _contentTextLabel = [[UILabel alloc]init];
         [_contentTextLabel setFont:[UIFont systemFontOfSize:13]];
-        [_contentTextLabel setTextColor:RGB(0X898989)];
+        [_contentTextLabel setTextColor:RGB16(0X898989)];
         _contentTextLabel.numberOfLines = 0;
     }
     return _contentTextLabel;
