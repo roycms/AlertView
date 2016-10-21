@@ -9,8 +9,8 @@ AlertView A pop-up framework, Can be simple and convenient to join your project.
 [![email](https://img.shields.io/badge/%20email%20-%20roycms%40qq.com%20-yellowgreen.svg)](mailto:roycms@qq.com)
 [![doc](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-DOC-orange.svg)](https://github.com/roycms/RAlertView/blob/master/README-CN.md)
 
-
-
+## Warning content
+ ![Warning content](https://github.com/roycms/RAlertView/blob/master/RAlert/RAlert.gif)
 
 ## Installation
 - Depend on the project ` Masonry `and ` HexColors ` Import  `#import "Masonry.h"` `#import "HexColors.h"`
