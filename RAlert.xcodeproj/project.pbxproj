@@ -16,6 +16,7 @@
 		B092E8D71DB0C27200A076C7 /* closed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D21DB0C27200A076C7 /* closed@2x.png */; };
 		B092E8D81DB0C27200A076C7 /* closed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D31DB0C27200A076C7 /* closed@3x.png */; };
 		B092E8D91DB0C27200A076C7 /* RAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092E8D51DB0C27200A076C7 /* RAlertView.m */; };
+		B09DFF611DB9E44300EC99A5 /* RAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = B09DFF601DB9E44300EC99A5 /* RAlert.gif */; };
 		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
 		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
 		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
@@ -55,6 +56,7 @@
 		B092E8D31DB0C27200A076C7 /* closed@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "closed@3x.png"; sourceTree = "<group>"; };
 		B092E8D41DB0C27200A076C7 /* RAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAlertView.h; sourceTree = "<group>"; };
 		B092E8D51DB0C27200A076C7 /* RAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAlertView.m; sourceTree = "<group>"; };
+		B09DFF601DB9E44300EC99A5 /* RAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RAlert.gif; sourceTree = "<group>"; };
 		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 		B092E8B51DB0AD6200A076C7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B09DFF601DB9E44300EC99A5 /* RAlert.gif */,
 				B0778C6C1DB8EE3500DFBC72 /* bg.jpg */,
 				B092E8BA1DB0B83000A076C7 /* logo.png */,
 				B092E8B61DB0AD7600A076C7 /* AlertStyle.jpg */,
@@ -324,6 +327,7 @@
 				B092E8D71DB0C27200A076C7 /* closed@2x.png in Resources */,
 				B092E8B91DB0AD7600A076C7 /* Theme.jpg in Resources */,
 				B092E8D81DB0C27200A076C7 /* closed@3x.png in Resources */,
+				B09DFF611DB9E44300EC99A5 /* RAlert.gif in Resources */,
 				B0FA76FB1DAE4F3D00677D11 /* Main.storyboard in Resources */,
 				B092E8B81DB0AD7600A076C7 /* AlertStyle.jpg in Resources */,
 			);
