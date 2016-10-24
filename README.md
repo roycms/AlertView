@@ -1,4 +1,4 @@
- ![Logo](https://github.com/roycms/RAlertView/blob/master/RAlert/logo.png)
+ ![Logo](https://roycms.github.io/AlertView/RAlert/logo.png)
  RAlertView
 ===
 AlertView A pop-up framework, Can be simple and convenient to join your project.
@@ -10,7 +10,7 @@ AlertView A pop-up framework, Can be simple and convenient to join your project.
 [![doc](https://img.shields.io/badge/%E4%B8%AD%E6%96%87-DOC-orange.svg)](https://github.com/roycms/RAlertView/blob/master/README-CN.md)
 
 ## Warning content
- ![Warning content](https://github.com/roycms/RAlertView/blob/master/RAlert/RAlert.gif)
+ ![Warning content](https://roycms.github.io/AlertView/RAlert/RAlert.gif)
 
 ## Installation
 - Depend on the project ` Masonry `and ` HexColors ` Import  `#import "Masonry.h"` `#import "HexColors.h"`
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger,AlertStyle) {
     CancelAndConfirmAlert,
 };
 ```
-![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/AlertStyle.jpg)
+![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/AlertStyle.jpg)
 ## Preview  AlertTheme
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertTheme) {
@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
     Purple2Alert,
 };
 ```
-![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg)
+![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/Theme.jpg)
 
 ## Some feature set
 * Click on the background and any position hidden pop-up window
