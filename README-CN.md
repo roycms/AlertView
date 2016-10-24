@@ -1,4 +1,4 @@
- ![Logo](https://github.com/roycms/RAlertView/blob/master/RAlert/logo.png)
+ ![Logo](https://roycms.github.io/AlertView/RAlert/logo.png)
  RAlertView ios弹窗
 ===
 AlertView 是一个ios弹窗框架，可以很简单的集成到自己的项目内，支持pod.
@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger,AlertStyle) {
     CancelAndConfirmAlert,
 };
 ```
-![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/AlertStyle.jpg)
+![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/AlertStyle.jpg)
 ## 弹窗主题效果  AlertTheme
 ```objective-c
 typedef NS_ENUM(NSInteger,AlertTheme) {
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger,AlertTheme) {
     Purple2Alert,
 };
 ```
-![RAlertView Preview](https://github.com/roycms/RAlertView/blob/master/RAlert/Theme.jpg)
+![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/Theme.jpg)
 
 ## 一些属性设置
 * 设置单击背景或者任意位置都可以关闭弹窗
