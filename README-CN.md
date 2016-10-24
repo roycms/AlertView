@@ -8,7 +8,7 @@ AlertView 是一个ios弹窗框架，可以很简单的集成到自己的项目�
 [![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000?style=flat-square)](https://github.com/roycms/RAlertView/blob/master/LICENSE)
 [![email](https://img.shields.io/badge/%20email%20-%20roycms%40qq.com%20-yellowgreen.svg)](mailto:roycms@qq.com)
 
-## Warning content
+## 动画预览
  ![Warning content](https://roycms.github.io/AlertView/RAlert/RAlert.gif)
  
 ## 安装
