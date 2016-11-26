@@ -102,7 +102,7 @@
         {
             RAlertView *alert = [[RAlertView alloc] initWithStyle:ConfirmAlert];
             alert.headerTitleLabel.text = @"ConfirmAlert";
-            alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];;
+            alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];
             [alert.confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
             alert.confirm = ^(){
                 NSLog(@"Click on the Ok");
