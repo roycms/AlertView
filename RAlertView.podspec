@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "RAlertView"
   s.version      = "0.1.0"
-  s.summary      = "AlertView 0.1.0"
+  s.summary      = "RAlertView 0.1.0"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     AlertView A pop-up framework, Can be simple and convenient to join your project.
   }
 
-  s.homepage     = "https://github.com/roycms/RAlertView"
+  s.homepage     = "https://github.com/roycms/AlertView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ s.license          = { :type => "MIT", :file => "LICENSE" }
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/roycms/RAlertView.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/roycms/AlertView.git", :tag => "0.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -136,7 +136,7 @@ s.license          = { :type => "MIT", :file => "LICENSE" }
   # s.dependency "JSONKit", "~> 1.4"
 
 s.dependency "Masonry"
-s.dependency "HexColors", "~> 4.0.0"
+s.dependency "RGB"
 s.ios.deployment_target = '8.0' # minimum SDK with autolayout
 # s.osx.deployment_target = '10.7' # minimum SDK with autolayout
 end
