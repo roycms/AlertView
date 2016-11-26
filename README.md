@@ -30,13 +30,8 @@ typedef NS_ENUM(NSInteger,AlertStyle) {
 ![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/AlertStyle.jpg)
 ## Preview  AlertTheme
 ```objective-c
-typedef NS_ENUM(NSInteger,AlertTheme) {
-    YellowAlert = 0,
-    GreenAlert,
-    BlueAlert,
-    Purple1Alert,
-    Purple2Alert,
-};
+   RAlertView *alert = [[RAlertView alloc] initWithStyle:CancelAndConfirmAlert];
+   alert.theme =[UIColor redColor];
 ```
 ![RAlertView Preview](https://roycms.github.io/AlertView/RAlert/Theme.jpg)
 
@@ -47,7 +42,9 @@ alert.isClickBackgroundCloseWindow = YES;
 ```
 * Set bounced content text center
 ```objective-c
-[alert setContentText:@"is ContentText" isAlignmentCenter:YES];
+alert.contentTextLabel.text =@"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
+
+alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];
 ```
 
 ## init RAlertView
@@ -61,33 +58,34 @@ RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert width:0.8];
 ```
 ## SimpleAlert
 ```objective-c
-RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert];
-alert.contentText = @"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
+RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert width:0.8];
+alert.isClickBackgroundCloseWindow = YES;
+alert.contentTextLabel.text =@"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
 ```
 ## ConfirmAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:ConfirmAlert];
-alert.theme = Purple1Alert;
-alert.headerTitle = @"ConfirmAlert";
-alert.contentText = @"AlertView A pop-up framework, Can be simple and convenient to join your project";
-alert.confirmButtonText = @"Ok";
-alert.confirmButtonBlock = ^(){
-    NSLog(@"Click on the Ok");
-};
+alert.headerTitleLabel.text = @"ConfirmAlert";
+alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];
+[alert.confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
+alert.confirm = ^(){
+        NSLog(@"Click on the Ok");
+   };
+
 ```
 ## CancelAndConfirmAlert
 ```objective-c
 RAlertView *alert = [[RAlertView alloc] initWithStyle:CancelAndConfirmAlert];
-alert.headerTitle = @"CancelAndConfirmAlert";
-alert.contentText = @"AlertView A pop-up framework, Can be simple and convenient to join your project";
-alert.confirmButtonText = @"Ok";
-alert.cancelButtonText = @"Cancel";
-alert.confirmButtonBlock = ^(){
-    NSLog(@"Click on the Ok");
-};
-alert.cancelWindowBlock = ^(){
-    NSLog(@"Click on the Cancel");
-};
+alert.headerTitleLabel.text = @"CancelAndConfirmAlert";
+alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];;
+[alert.confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
+[alert.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+alert.confirm = ^(){
+        NSLog(@"Click on the Ok");
+   };
+alert.cancel = ^(){
+        NSLog(@"Click on the Cancel");
+   };
 ```
 
 ## TODO
