@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RAlertView"
-  s.version      = "0.1.0"
-  s.summary      = "RAlertView 0.1.0"
+  s.version      = "0.1.1"
+  s.summary      = "RAlertView 0.1.1"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = %{
-    AlertView A pop-up framework, Can be simple and convenient to join your project.
+    RAlertView A pop-up framework, Can be simple and convenient to join your project.
   }
 
   s.homepage     = "https://github.com/roycms/AlertView"
@@ -80,7 +80,7 @@ s.license          = { :type => "MIT", :file => "LICENSE" }
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/roycms/AlertView.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/roycms/AlertView.git", :tag => "0.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
