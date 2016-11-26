@@ -17,6 +17,7 @@
 		B092E8D81DB0C27200A076C7 /* closed@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B092E8D31DB0C27200A076C7 /* closed@3x.png */; };
 		B092E8D91DB0C27200A076C7 /* RAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B092E8D51DB0C27200A076C7 /* RAlertView.m */; };
 		B09DFF611DB9E44300EC99A5 /* RAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = B09DFF601DB9E44300EC99A5 /* RAlert.gif */; };
+		B0B1ABF61DE9AF2400276041 /* TextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1ABF51DE9AF2400276041 /* TextHelper.m */; };
 		B0FA76F21DAE4F3D00677D11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F11DAE4F3D00677D11 /* main.m */; };
 		B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F41DAE4F3D00677D11 /* AppDelegate.m */; };
 		B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FA76F71DAE4F3D00677D11 /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		B092E8D41DB0C27200A076C7 /* RAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAlertView.h; sourceTree = "<group>"; };
 		B092E8D51DB0C27200A076C7 /* RAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAlertView.m; sourceTree = "<group>"; };
 		B09DFF601DB9E44300EC99A5 /* RAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = RAlert.gif; sourceTree = "<group>"; };
+		B0B1ABF41DE9AF2400276041 /* TextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextHelper.h; sourceTree = "<group>"; };
+		B0B1ABF51DE9AF2400276041 /* TextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextHelper.m; sourceTree = "<group>"; };
 		B0FA76ED1DAE4F3D00677D11 /* RAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FA76F11DAE4F3D00677D11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0FA76F31DAE4F3D00677D11 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				B092E8D31DB0C27200A076C7 /* closed@3x.png */,
 				B092E8D41DB0C27200A076C7 /* RAlertView.h */,
 				B092E8D51DB0C27200A076C7 /* RAlertView.m */,
+				B0B1ABF41DE9AF2400276041 /* TextHelper.h */,
+				B0B1ABF51DE9AF2400276041 /* TextHelper.m */,
 			);
 			path = RAlertView;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				B0FA76F81DAE4F3D00677D11 /* ViewController.m in Sources */,
 				B0FA76F51DAE4F3D00677D11 /* AppDelegate.m in Sources */,
 				B0FA76F21DAE4F3D00677D11 /* main.m in Sources */,
+				B0B1ABF61DE9AF2400276041 /* TextHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

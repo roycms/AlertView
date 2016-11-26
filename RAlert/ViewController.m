@@ -95,17 +95,16 @@
         {
             RAlertView *alert = [[RAlertView alloc] initWithStyle:SimpleAlert width:0.8];
             alert.isClickBackgroundCloseWindow = YES;
-            [alert setContentText:@"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project" isAlignmentCenter:YES];
+            alert.contentTextLabel.text =@"SimpleAlert \nAlertView A pop-up framework, Can be simple and convenient to join your project";
         }
             break;
         case 1:
         {
             RAlertView *alert = [[RAlertView alloc] initWithStyle:ConfirmAlert];
-            alert.theme = Purple1Alert;
-            alert.headerTitle = @"ConfirmAlert";
-            alert.contentText = @"AlertView A pop-up framework, Can be simple and convenient to join your project";
-            alert.confirmButtonText = @"Ok";
-            alert.confirmButtonBlock = ^(){
+            alert.headerTitleLabel.text = @"ConfirmAlert";
+            alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];;
+            [alert.confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
+            alert.confirm = ^(){
                 NSLog(@"Click on the Ok");
             };
 
@@ -114,14 +113,15 @@
         case 2:
         {
             RAlertView *alert = [[RAlertView alloc] initWithStyle:CancelAndConfirmAlert];
-            alert.headerTitle = @"CancelAndConfirmAlert";
-            alert.contentText = @"AlertView A pop-up framework, Can be simple and convenient to join your project";
-            alert.confirmButtonText = @"Ok";
-            alert.cancelButtonText = @"Cancel";
-            alert.confirmButtonBlock = ^(){
+            alert.headerTitleLabel.text = @"CancelAndConfirmAlert";
+            alert.contentTextLabel.attributedText = [TextHelper attributedStringForString:@"AlertView A pop-up framework, Can be simple and convenient to join your project" lineSpacing:5];;
+            [alert.confirmButton setTitle:@"Ok" forState:UIControlStateNormal];
+            [alert.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+            alert.theme =[UIColor redColor];
+            alert.confirm = ^(){
                 NSLog(@"Click on the Ok");
             };
-            alert.cancelWindowBlock = ^(){
+            alert.cancel = ^(){
                 NSLog(@"Click on the Cancel");
             };
 
@@ -130,10 +130,5 @@
     }
 
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

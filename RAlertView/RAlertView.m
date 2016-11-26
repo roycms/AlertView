@@ -9,15 +9,19 @@
 #import "RAlertView.h"
 
 @interface RAlertView ()
-@property(nonatomic,strong)UILabel *headerTitleLabel;
-@property(nonatomic,strong)UILabel *contentTextLabel;
-@property(nonatomic,strong)UIButton *closedButton;
-@property(nonatomic,strong)UIButton *confirmButton;
-@property(nonatomic,strong)UIButton *cancelButton;
-@property(nonatomic,strong)UIView *mainView;
+
+@property (nonatomic,strong)NSArray *themeArray;
+
 @end
 @implementation RAlertView
 
+
+/**
+ init
+
+ @param style style description
+ @return return value description
+ */
 - (instancetype)initWithStyle:(AlertStyle)style {
     self = [super init];
     if (self) {
@@ -26,6 +30,13 @@
     return self;
 }
 
+/**
+ init
+
+ @param style style description
+ @param width width description
+ @return return value description
+ */
 - (instancetype)initWithStyle:(AlertStyle)style width:(CGFloat)width{
     self = [super init];
     if (self) {
@@ -35,6 +46,29 @@
     return self;
 }
 
+/**
+ 准备默认数据
+ */
+-(void)prepareData{
+    
+    self.themeArray = @[RGB16(0X1abc9c),
+                        RGB16(0X27ae60),
+                        RGB16(0X2980b9),
+                        RGB16(0X2c3e50),
+                        RGB16(0Xf39c12),
+                        RGB16(0Xc0392b),
+                        RGB16(0X7f8c8d),
+                        RGB16(0X8e44ad)];
+    
+    [self.confirmButton setBackgroundColor:self.themeArray[(arc4random() % 8)]];
+    [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+}
+
+/**
+ 设置弹框的宽度
+
+ @param width width 宽度值  范围 0-1  百分比
+ */
 -(void)setAlertWidth:(CGFloat)width{
     
     [self.mainView mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -50,32 +84,23 @@
     }];
 }
 
--(void)setTheme:(AlertTheme)theme{
+/**
+ 设置 主题的 set 方法
+
+ @param theme theme description
+ */
+-(void)setTheme:(UIColor*)theme{
     
-    switch (theme) {
-        case YellowAlert://#fddb43
-            [self.confirmButton setBackgroundColor:RGB16(0Xfddb43)];
-            [self.confirmButton setTitleColor:RGB16(0X3D3D3D) forState:UIControlStateNormal];
-            break;
-        case GreenAlert://#4CBE77
-            [self.confirmButton setBackgroundColor:RGB16(0X4CBE77)];
-            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            break;
-        case BlueAlert://#295DC0
-            [self.confirmButton setBackgroundColor:RGB16(0X295DC0)];
-            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            break;
-        case Purple1Alert://#74225C
-            [self.confirmButton setBackgroundColor:RGB16(0X74225C)];
-            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            break;
-        case Purple2Alert://#B655FF
-            [self.confirmButton setBackgroundColor:RGB16(0XB655FF)];
-            [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            
-            break;
-    }
+    [self.confirmButton setBackgroundColor:theme];
+    [self.confirmButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 }
+
+
+/**
+ 单击 背景 是否关闭弹窗
+
+ @param isClickBackgroundCloseWindow isClickBackgroundCloseWindow description
+ */
 -(void)setIsClickBackgroundCloseWindow:(BOOL)isClickBackgroundCloseWindow{
     if(isClickBackgroundCloseWindow){
         UITapGestureRecognizer*tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(exit)];
@@ -83,50 +108,30 @@
     }
 }
 
--(void)setHeaderTitle:(NSString *)headerTitle{
-    [self.headerTitleLabel setText:headerTitle];
-}
--(void)setContentText:(NSString *)contentText{
-    [self setContentText:contentText isAlignmentCenter:NO];
-}
--(void)setContentText:(NSString *)contentText isAlignmentCenter:(BOOL)isAlignmentCenter{
-    NSMutableAttributedString * attributedString = [[NSMutableAttributedString alloc] initWithString:contentText];
-    NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [paragraphStyle setLineSpacing:5];
-    if (isAlignmentCenter) {
-        paragraphStyle.alignment = NSTextAlignmentCenter;
-    }
-    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [contentText length])];
-    [self.contentTextLabel setAttributedText:attributedString];
-}
--(void)setConfirmButtonText:(NSString *)confirmButtonText{
-    [self.confirmButton setTitle:confirmButtonText forState:UIControlStateNormal];
-}
--(void)setCancelButtonText:(NSString *)cancelButtonText{
-    [self.cancelButton setTitle:cancelButtonText forState:UIControlStateNormal];
-}
-
 -(void)initWindow:(AlertStyle)style{
+    
+    [self viewInitUI];
     
     switch (style) {
         case SimpleAlert:
-            [self viewInitUI];
             [self simpleAlertViewInitUI];
-            [self animateSenior];
             break;
         case ConfirmAlert:
-            [self viewInitUI];
             [self confirmAlertViewInitUI];
-            [self animateSenior];
+            
             break;
         case CancelAndConfirmAlert:
-            [self viewInitUI];
             [self cancelAndConfirmAlertViewInitUI];
-            [self animateSenior];
             break;
     }
+    
+    [self animateSenior];
+    [self prepareData];
 }
 
+/**
+ view 初始化
+ */
 -(void)viewInitUI{
     
     UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
@@ -166,6 +171,9 @@
     }];
 }
 
+/**
+ 无按钮  弹窗样式
+ */
 -(void)simpleAlertViewInitUI{
     
     [self.contentTextLabel setFont:[UIFont systemFontOfSize:15]];
@@ -180,6 +188,9 @@
     }];
 }
 
+/**
+ 只有确认按钮 的弹窗样式
+ */
 -(void)confirmAlertViewInitUI{
     
     [self.mainView addSubview:self.confirmButton];
@@ -198,6 +209,9 @@
     }];
 }
 
+/**
+ 有取消 按钮 和 确认按钮的弹窗样式
+ */
 -(void)cancelAndConfirmAlertViewInitUI{
     [self.mainView addSubview:self.cancelButton];
     [self.mainView addSubview:self.confirmButton];
@@ -221,6 +235,9 @@
     }];
 }
 
+/**
+ 弹窗飞入 动画
+ */
 -(void)animate{
     
     [self setBackgroundColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:0]];
@@ -234,6 +251,9 @@
     }];
 }
 
+/**
+ 弹窗飞入 渐变 动画
+ */
 -(void)animateSenior{
 
     self.mainView.transform = CGAffineTransformMakeTranslation(0, 600);
@@ -243,26 +263,50 @@
     }];
 }
 
+#pragma make 事件
+
+/**
+ 销毁弹窗  方法
+ */
 -(void)exit{
     [self removeFromSuperview];
 }
 
+/**
+ 关闭按钮事件
+
+ @param sender sender description
+ */
 -(void)closedButtonClick:(UIButton *)sender{
     [self exit];
 }
+
+/**
+ 确定按钮的事件
+
+ @param sender sender description
+ */
 -(void)confirmButtonClick:(UIButton*)sender{
     
-    if(self.confirmButtonBlock){
-        self.confirmButtonBlock();
+    if(self.confirm){
+        self.confirm();
     }
     [self exit];
 }
+
+/**
+ 取消按钮的 事件
+
+ @param sender sender description
+ */
 -(void)cancelButtonClick:(UIButton*)sender{
-    if(self.cancelWindowBlock){
-        self.cancelWindowBlock();
+    if(self.cancel){
+        self.cancel();
     }
     [self exit];
 }
+
+#pragma make 懒加载
 
 -(UIView*)mainView{
     if (_mainView == nil) {
@@ -329,6 +373,7 @@
     if (_contentTextLabel == nil) {
         _contentTextLabel = [[UILabel alloc]init];
         [_contentTextLabel setFont:[UIFont systemFontOfSize:13]];
+        [_contentTextLabel setTextAlignment:NSTextAlignmentCenter];
         [_contentTextLabel setTextColor:RGB16(0X898989)];
         _contentTextLabel.numberOfLines = 0;
     }
