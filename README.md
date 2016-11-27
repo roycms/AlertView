@@ -17,7 +17,7 @@ AlertView A pop-up framework, Can be simple and convenient to join your project.
 - Import the main header file：`#import "RAlertView.h"`
 
 ## cocoapods 
-`  pod 'AlertView' `
+`  pod 'RAlertView' `
 
 ## Preview  AlertStyle
 ```objective-c
