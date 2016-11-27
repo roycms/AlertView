@@ -16,7 +16,7 @@ AlertView 是一个ios弹窗框架，可以很简单的集成到自己的项目�
 - 在需要的地方导入：`#import "RAlertView.h"` 你懂的
 
 ## cocoapods 安装
-`  pod 'AlertView' `
+`  pod 'RAlertView' `
 
 ## 弹窗类型  AlertStyle
 ```objective-c
